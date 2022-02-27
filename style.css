@@ -156,11 +156,18 @@ a:link {
 
 .services {
     width:100%;
+    position:relative;
+    /*right:80%;*/
+   /* left:100%;*/
+    text-align: center;
+    align-items: center;
+
 }
 
 #services {
     margin-top:5%;
     margin-bottom:5%;
+    left:8%;
 }
 
 .photo_and_title {
