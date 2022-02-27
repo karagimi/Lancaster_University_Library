@@ -1,10 +1,21 @@
+
 @font-face {
-    font-family: AsarRegular;
-    src: url(font/Asar-Regular.ttf);
+    font-family: Cyntho;
+    src: url(fonts/CynthoSlabPro-Regular.otf);
+}
+
+@font-face {
+    font-family: EgyptianSlate;
+    src: url(fonts/EgyptianSlateBk.TTF);
+}
+
+@font-face {
+    font-family:Noyh;
+    src: url(fonts/Noyh-Italic.ttf);
 }
 
 .container {
-    width:80%;
+    width:85%;
     height:100%;
 }
 
@@ -28,6 +39,8 @@
     border: 0;
     display:flex;
     margin-bottom:0%;
+    font-family:Noyh;
+    font-size: 150%;
 }
 
 .nav, .navbar-nav, .dropdown-toggle{
@@ -42,11 +55,11 @@
 body {
     background-color: rgb(68, 68, 68);
     height:100%;
-    font-family:AsarRegular;
 }
 
 #example_div {
     position:relative;
+    font-family:EgyptianSlate;
 }
 
 #example {
@@ -61,11 +74,33 @@ body {
     height:26%;
     align-items: center;
     text-align: center;
+    font-weight: 500;
 }
 
 .onesearch {
     background-color: rgb(239, 239, 239);
     text-align: center;
+}
+
+#inputs_div {
+    display:flex;
+    left:32%;
+    width:40%;
+    margin-bottom: 1.5%;
+}
+
+#links {
+    margin-bottom:5%;
+}
+
+#advanced_search {
+    text-decoration: underline !important;
+    text-decoration-color: rgb(214, 214, 214) !important;
+}
+
+#using_onesearch {
+    text-decoration: underline !important;
+    text-decoration-color: rgb(214, 214, 214) !important;
 }
 
 #shield {
@@ -74,7 +109,66 @@ body {
 
 #search-addon {
     position:absolute;
-    top:38%;
-    left:100%;
+    top:30%;
+    left:97%;
     right:100%;
+    font-size:170%;
+}
+
+#search {
+    width:100%;
+    right:15%;
+}
+
+#submit {
+    background-color: rgb(181, 18, 27);
+    color:white;
+}
+
+a:link {
+    color:rgb(181, 18, 27);
+}
+
+#first_options {
+    background-color: rgb(104,121,92);
+    text-align:center;
+    margin-right:0%;
+    margin-left:0%;
+    color:white;
+    font-size:150%;
+    font-family:Cyntho;
+}
+
+.green_stuff {
+    width:50%;
+}
+
+.library_services {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+#all_first_green_stuff {
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+.services {
+    width:100%;
+}
+
+#services {
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.photo_and_title {
+    background-color:rgb(239, 239, 239);
+}
+
+@media only screen and (max-width:768px) {
+    #search {
+        display:none;
+    }
 }
