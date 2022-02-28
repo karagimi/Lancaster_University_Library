@@ -206,17 +206,66 @@ a:link {
     font-size:250%;
     width:50%;
     height:50%;
-  /*  align-items: center;
-    text-align: center;*/
+    padding:1%;
     font-size:200%;
 }
 
 #little_library_extension_div {
     font-size:1.75rem;
+    margin-bottom:2%;
+    margin-top:2%;
 }
 
 #library_extension_button {
     background-color:rgb(181, 18, 27);
+}
+
+.news_events_titlediv {
+    
+}
+
+#news_events_titlecol {
+    background-color:rgb(104,121,92);
+}
+
+#text_div {
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size: 150%;
+    width:25%;
+    left:11%;
+    color:white;
+}
+
+#news_events_titlerow {
+    margin-left:0;
+    margin-right:0;
+}
+
+.footer {
+    background-color: rgb(85, 86, 86);
+    color:white;
+    /* text-align: center;*/
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    float:left;
+}
+
+#quick_links_list {
+    color:lightgray;    
+    text-align: left;
+}
+
+#faculties_depts_list {
+    color:lightgray;    
+    text-align: left;   
+}
+
+.footer_titles {
+    font-size:135%;
 }
 
 @media only screen and (max-width:768px) {
