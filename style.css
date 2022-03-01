@@ -30,6 +30,10 @@
     padding:0.75%;
 }
 
+.header_links {
+    color:white;
+}
+
 .header_right_elements {
     font-weight: bold;
 }
