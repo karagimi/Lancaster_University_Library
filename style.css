@@ -14,6 +14,11 @@
     src: url(fonts/Noyh-Italic.ttf);
 }
 
+@font-face {
+    font-family:Mirai;
+    src: url(fonts/Mirai-Medium.ttf);
+}
+
 .container {
     width:85%;
     height:100%;
@@ -22,6 +27,11 @@
 .header {
     background-color: rgb(75, 75, 75);
     text-align: center;
+    padding:0.75%;
+}
+
+.header_right_elements {
+    font-weight: bold;
 }
 
 .search_bar {
@@ -82,11 +92,24 @@ body {
     text-align: center;
 }
 
+#onesearch {
+    width:170%;
+}
+
+#submit {
+    height:70%;
+}
+
+#form_dropdown {
+    width:100%;
+}
+
 #inputs_div {
     display:flex;
-    left:32%;
+    left:15%;
     width:40%;
     margin-bottom: 1.5%;
+    width:65%;
 }
 
 #links {
@@ -123,6 +146,7 @@ body {
 #submit {
     background-color: rgb(181, 18, 27);
     color:white;
+    width:25%;
 }
 
 a:link {
@@ -200,11 +224,11 @@ a:link {
 #library_extension {
     position:absolute;
     top: 28%;
-    left: 36%;
+    left: 46%;
     background-color: white;
     opacity:0.87;
     font-size:250%;
-    width:50%;
+    width:40%;
     height:50%;
     padding:1%;
     font-size:200%;
@@ -218,14 +242,13 @@ a:link {
 
 #library_extension_button {
     background-color:rgb(181, 18, 27);
-}
-
-.news_events_titlediv {
-    
+    opacity: 100%;
 }
 
 #news_events_titlecol {
     background-color:rgb(104,121,92);
+    font-size: 115%;
+    font-family: Mirai;
 }
 
 #text_div {
