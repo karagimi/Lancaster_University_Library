@@ -32,6 +32,41 @@
 
 .header_links {
     color:white;
+    text-decoration-color: rgb(214, 214, 214) !important;
+    font-weight:bold;
+}
+
+#header_links a:hover {
+    color:white;
+    
+}
+
+#header_links a:link {
+    color:white;
+}
+
+#header_links a:visited {
+    color:white;
+}
+
+#header_links a:active {
+    color:white;
+}
+
+#left_header_link a:link {
+    color:white;
+}
+
+#left_header_link a:visited {
+    color:white;
+}
+
+#left_header_link a:hover {
+    color:white;
+}
+
+#left_header_link a:active {
+    color:white;
 }
 
 .header_right_elements {
@@ -49,12 +84,14 @@
 }
 
 .navbar {
-    background-color: rgb(181, 18, 27);
-    border: 0;
-    display:flex;
     margin-bottom:0%;
-    font-family:Noyh;
-    font-size: 150%;
+    font-size: 110%;
+    background-color: rgb(181, 18, 27) !important;
+}
+
+.collapse {
+    position:relative;
+    left:6%;
 }
 
 .nav, .navbar-nav, .dropdown-toggle{
@@ -79,8 +116,7 @@ body {
 #example {
     position: absolute;
     top: 37%;
-    left: 25%;
-    padding:1%; 
+    left: 25%; 
     background-color: white;
     opacity:0.87;
     font-size:250%;
@@ -97,23 +133,27 @@ body {
 }
 
 #onesearch {
-    width:170%;
+    width:35%;
+}
+
+#onesearch_text {
+    margin-top:3%;
 }
 
 #submit {
-    height:70%;
+    height:50%;
+    width:8% !important;
 }
 
 #form_dropdown {
-    width:100%;
+    width:23%;
 }
 
 #inputs_div {
     display:flex;
     left:15%;
-    width:40%;
     margin-bottom: 1.5%;
-    width:65%;
+    margin-top:2%;
 }
 
 #links {
@@ -134,12 +174,8 @@ body {
     width:3%;
 }
 
-#search-addon {
-    position:absolute;
-    top:30%;
-    left:97%;
-    right:100%;
-    font-size:170%;
+#search_icon {
+    font-size: 170%;
 }
 
 #search {
@@ -177,9 +213,24 @@ a:link {
     align-items: center;
 }
 
+.figure {
+    position:relative;
+    margin-top:15%;
+    margin-bottom:15%;
+    left:55%;
+}
+
+.figtext {
+    font-size:130%;
+    margin-left:5%;
+    margin-top:5%;
+    margin-bottom:7%;
+}
+
 #all_first_green_stuff {
     margin-top:3%;
     margin-bottom:3%;
+    
 }
 
 .services {
@@ -215,6 +266,7 @@ a:link {
     margin-top:3%;
     margin-bottom:3%;
     width:80%;
+    left:9%;
 }
 
 #library_extension_image {
@@ -223,6 +275,7 @@ a:link {
 
 #library_extension_div {
     position:relative;
+    font-size: 85%;
 }
 
 #library_extension {
@@ -230,23 +283,22 @@ a:link {
     top: 28%;
     left: 46%;
     background-color: white;
-    opacity:0.87;
+    opacity:0.9;
     font-size:250%;
-    width:40%;
-    height:50%;
+    width:43%;
+    height:55%;
     padding:1%;
     font-size:200%;
 }
 
 #little_library_extension_div {
-    font-size:1.75rem;
+    font-size:55%;
     margin-bottom:2%;
     margin-top:2%;
 }
 
 #library_extension_button {
     background-color:rgb(181, 18, 27);
-    opacity: 100%;
 }
 
 #news_events_titlecol {
@@ -270,9 +322,8 @@ a:link {
 }
 
 .footer {
-    background-color: rgb(85, 86, 86);
+    background-color: rgb(99, 99, 99);
     color:white;
-    /* text-align: center;*/
 }
 
 ul {
@@ -282,21 +333,63 @@ ul {
 }
 
 #quick_links_list {
-    color:lightgray;    
-    text-align: left;
+    color:lightgray; 
+    font-size:80%;
 }
 
 #faculties_depts_list {
     color:lightgray;    
-    text-align: left;   
+    font-size:80%;   
+}
+
+#contact {
+    font-size:80%;
+}
+
+#myCarousel {
+    align-items: center;
+    text-align: center;
 }
 
 .footer_titles {
-    font-size:135%;
+    font-size:115%;
+}
+
+#footer a:link {
+    color: lightgray;
+}
+
+#footer a:visited {
+    color: lightgray;
+}
+#footer a:active {
+    color: lightgray;
+}
+
+#footer a:hover {
+    color: lightgray;
 }
 
 @media only screen and (max-width:768px) {
     #search {
+        display:none;
+    }
+
+    .container {
+        width:100%;
+        padding:0;
+    }
+
+    .header_links {
+        display:none;
+    }
+
+    .header {
+        text-align:left;
+        padding:0%;
+    }
+
+    .nav_bar {
         display:none;
     }
 }
