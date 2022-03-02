@@ -19,6 +19,16 @@
     src: url(fonts/Mirai-Medium.ttf);
 }
 
+@font-face {
+    font-family:EffraRegular;
+    src: url(fonts/Effra\ Regular.ttf);
+}
+
+@font-face {
+    font-family:LexiaRegular;
+    src: url(fonts/Lexia\ Regular.ttf);
+}
+
 .container {
     width:85%;
     height:100%;
@@ -34,6 +44,10 @@
     color:white;
     text-decoration-color: rgb(214, 214, 214) !important;
     font-weight:bold;
+}
+
+#left_header_link {
+    font-family: LexiaRegular,Georgia,serif;
 }
 
 #header_links a:hover {
@@ -79,19 +93,35 @@
 }
 
 #search {
-    width:60%;
-    padding:5%;
+   position:relative;
+   top:30%;
+}
+
+#search_icon {
+    position:relative;
+    right:15%;
+}
+
+#search_col {
+    position:relative;
+}
+
+#search_icon_div {
+    position:relative;
+    right:-35%;
+    bottom:5%;
 }
 
 .navbar {
     margin-bottom:0%;
-    font-size: 110%;
+    font-size: 115%;
     background-color: rgb(181, 18, 27) !important;
+    font-family: EffraRegular,Georgia,serif;
 }
 
 .collapse {
     position:relative;
-    left:6%;
+    left:5%;
 }
 
 .nav, .navbar-nav, .dropdown-toggle{
@@ -199,18 +229,27 @@ a:link {
     margin-right:0%;
     margin-left:0%;
     color:white;
-    font-size:150%;
+    font-size:120%;
     font-family:Cyntho;
 }
 
 .green_stuff {
-    width:50%;
+    width:65%;
+    margin-top:20%;
+}
+
+.green_text {
+    margin-bottom:20%;
 }
 
 .library_services {
     background-color: white;
     text-align: center;
     align-items: center;
+}
+
+.second_green_stuff {
+    width:45%;
 }
 
 .figure {
@@ -221,7 +260,8 @@ a:link {
 }
 
 .figtext {
-    font-size:130%;
+    font-weight:500;
+    font-size:125%;
     margin-left:5%;
     margin-top:5%;
     margin-bottom:7%;
@@ -335,20 +375,29 @@ ul {
 #quick_links_list {
     color:lightgray; 
     font-size:80%;
+    padding:0;
 }
 
 #faculties_depts_list {
     color:lightgray;    
     font-size:80%;   
+    padding:0;
 }
 
 #contact {
     font-size:80%;
+    padding:0;
 }
 
-#myCarousel {
-    align-items: center;
-    text-align: center;
+.carousel {
+    background-color:rgb(239, 239, 239);
+    
+}
+
+#carouselExampleIndicators {
+    width:50%;
+    left:24%;
+    padding:3%;
 }
 
 .footer_titles {
@@ -370,14 +419,46 @@ ul {
     color: lightgray;
 }
 
+#telephone_div {
+    left:-5%;
+    position:relative;
+    font-size:75%;
+    color:lightgray;
+}
+
+#location_div {
+    position:relative;
+    font-size:80%;
+    color:lightgray;
+}
+
+#telephone {
+    width:20%;
+}
+
+#location {
+    width:15%;
+}
+
+.footer_divs {
+    margin-top:5%;
+    left:10%;
+}
+
 @media only screen and (max-width:768px) {
     #search {
         display:none;
     }
 
+    html,body {
+        overflow: auto;
+    }
+
     .container {
         width:100%;
-        padding:0;
+        max-width: 768px;
+        padding-right:0;
+        padding-left:0;
     }
 
     .header_links {
@@ -391,5 +472,9 @@ ul {
 
     .nav_bar {
         display:none;
+    }
+
+    .row {
+        flex-wrap:unset;
     }
 }
