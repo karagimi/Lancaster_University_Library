@@ -1,0 +1,1 @@
+The preferred browser to view my website is Microsoft Edge.

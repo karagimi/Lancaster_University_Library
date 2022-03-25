@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Lancaster University Library</title>
+        <title>Library | Lancaster University</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+    
         <meta name="description" content="Website for Lancaster University Library">
         <meta name="keywords" content="Lancaster University Library">
         <meta name="author" content="Michalis Karagiannakis">
@@ -19,7 +24,7 @@
         <div class="container">
             <div class="header"> 
                 <div class="row">
-                    <div class="col-lg-6" id="left_header_link">
+                    <div class="col-lg-6 col-xs-12" id="left_header_link">
                         <img id="shield" src="images/assets/lu-shield.svg">
                         &nbsp; 
                         <a href="#">Lancaster University</a>
@@ -39,7 +44,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <a href="#">
-                            <img src="images/assets/library-logo.svg" alt="library-logo" width="300" height="100">
+                            <img src="images/assets/library-logo.svg" alt="library-logo" width="300" height="100" id="library_logo">
                         </a>
                     </div>
                     
@@ -51,6 +56,11 @@
                        <div id="search_icon_div">
                             <i class="fa fa-search" id="search_icon"></i>
                         </div>
+
+
+                        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                        class="fas fa-bars"></i></span></button>
                        
                     </div>
                 </div>
@@ -126,13 +136,15 @@
             </div>
 
             <div class="Library_title">
-                <div id="library_text">
-                    Lancaster University Library
+                <div class="row">
+                    <div id="library_text">
+                        Lancaster University Library
+                    </div>
                 </div>
             </div>
 
             <div class="onesearch">
-                <div class="row">
+                <div class="row laptop_one_search">
                     <div class="col-lg-12" id="onesearch_div">
                         <h3 id="onesearch_text">OneSearch</h3>
                         <div class="col-lg-12"  id="inputs_div"> 
@@ -158,11 +170,46 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row phone_onesearch">
+                    <div class="col-sm-12" id="onesearch_div">
+                        <h3 id="onesearch_text">OneSearch</h3>
+
+                        <div class="col-xs-12"  id="inputs_div"> 
+                            <div class="form-group" id="onesearch">
+                                <input type="text" class="form-control" placeholder="Search Library collections">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row phone_onesearch">
+                    <div class="col-xs-6">
+                        <div class="form-group" id="form_dropdown">
+                            <select class="form-control">
+                                <option selected>Books and More</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6" id="submit_div">
+                        <input type="submit" id="submit" value="Search" class="btn">  
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12"  id="links_phone">
+                        <a href="#" id="advanced_search"> <b>Advanced Search</b> </a>
+                        &nbsp;
+                        <a href="#" id="using_onesearch"> <b>Using OneSearch</b> </a>
+                    </div>
+                </div>
+
             </div>
 
            <div class="first_green_options">
                 <div class="row" id="first_options">
-                   <div class="col-lg-2">
+                   <div class="col-lg-2 col-md-4">
                         <a href="https://www.lancaster.ac.uk/library/how-to/use-resource-lists/">
                             <img alt="Resource Lists" src="images/assets/icons/0.PNG" class="green_stuff">
                         </a>
@@ -171,7 +218,7 @@
                         
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4">
                         <a href="https://lancaster.libguides.com/az.php">
                             <img alt="Databases" src="images/assets/icons/1.PNG" class="green_stuff">
                         </a>
@@ -179,22 +226,22 @@
                       <div class="green_text">Databases</div>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4">
                         <a href="https://lancaster.libguides.com/">
                             <img alt="Subject Guides" src="images/assets/icons/2.PNG" class="green_stuff">
                         </a>
                         <br> 
                         <div class="green_text">Subject <br> Guides</div>
-                    </div>
+                    </div> 
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4 laptop">
                         <a href="https://weblogin.lancs.ac.uk/login/?factors=LANCS.LOCAL&cosign-https-idp1.lancs.ac.uk&https://idp.lancs.ac.uk/idp/Authn/RemoteUser?conversation=e1s1">
                             <img alt="Request a resource" src="images/assets/icons/3.PNG" class="green_stuff">
                         </a>
                         <br>  <div class="green_text">Request a <br> resource</div>
                     </div>
 
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4 laptop">
                         <a href="https://www.lancaster.ac.uk/library/how-to/reference/">
                             <img alt="Referencing" src="images/assets/icons/4.PNG" class="green_stuff">
                         </a>
@@ -202,18 +249,117 @@
                        <div class="green_text">Referencing</div>
                     </div>
 
-                    <div class="col-lg-2" id="welcome_guide">
+                    <div class="col-lg-2 col-md-4 laptop" id="welcome_guide">
                         <a href="https://www.lancaster.ac.uk/library/welcome/">
                             <img alt="Welcome guide" src="images/assets/icons/5.PNG" class="green_stuff">
                         </a>
                       <div class="green_text">Welcome <br> guide</div>
                     </div>
                 </div>
+
+                <div class="tablet">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4">
+                            <a href="https://weblogin.lancs.ac.uk/login/?factors=LANCS.LOCAL&cosign-https-idp1.lancs.ac.uk&https://idp.lancs.ac.uk/idp/Authn/RemoteUser?conversation=e1s1">
+                                <img alt="Request a resource" src="images/assets/icons/3.PNG" class="green_stuff">
+                            </a>
+                            <br>  <div class="green_text">Request a <br> resource</div>
+                        </div>
+    
+                        <div class="col-lg-2 col-md-4">
+                            <a href="https://www.lancaster.ac.uk/library/how-to/reference/">
+                                <img alt="Referencing" src="images/assets/icons/4.PNG" class="green_stuff">
+                            </a>
+                            <br>
+                           <div class="green_text">Referencing</div>
+                        </div>
+    
+                        <div class="col-lg-2 col-md-4" id="welcome_guide">
+                            <a href="https://www.lancaster.ac.uk/library/welcome/">
+                                <img alt="Welcome guide" src="images/assets/icons/5.PNG" class="green_stuff">
+                            </a>
+                          <div class="green_text">Welcome <br> guide</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone_first_options">
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://www.lancaster.ac.uk/library/how-to/use-resource-lists/">
+                                <img alt="Resource Lists" src="images/assets/icons/0.PNG" class="green_stuff">
+                            </a>
+                            
+                            <div class="green_text">Resource  Lists</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://lancaster.libguides.com/az.php">
+                                <img alt="Databases" src="images/assets/icons/1.PNG" class="green_stuff">
+                            </a>
+                            <br>
+                          <div class="green_text">Databases</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://lancaster.libguides.com/">
+                                <img alt="Subject Guides" src="images/assets/icons/2.PNG" class="green_stuff">
+                            </a>
+                            <br> 
+                            <div class="green_text">Subject  Guides</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://weblogin.lancs.ac.uk/login/?factors=LANCS.LOCAL&cosign-https-idp1.lancs.ac.uk&https://idp.lancs.ac.uk/idp/Authn/RemoteUser?conversation=e1s1">
+                                <img alt="Request a resource" src="images/assets/icons/3.PNG" class="green_stuff">
+                            </a>
+                            <br>  <div class="green_text">Request a  resource</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://www.lancaster.ac.uk/library/how-to/reference/">
+                                <img alt="Referencing" src="images/assets/icons/4.PNG" class="green_stuff">
+                            </a>
+                            <br>
+                           <div class="green_text">Referencing</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_first_options_row">
+                        <div class="col-sm-12">
+                            <a href="https://www.lancaster.ac.uk/library/welcome/">
+                                <img alt="Welcome guide" src="images/assets/icons/5.PNG" class="green_stuff">
+                            </a>
+                          <div class="green_text">Welcome  guide</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="library_services">
+                <br>
+                <h2 id="library_services_header">Library services</h2>
                 <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-6 col-12" id="faculty_librarians">
                             <figure class="figure">
                                 <div class="photo_and_title">
                                     <a href="#">
@@ -231,7 +377,7 @@
                                 
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-6" id="learning_development">
                             <figure class="figure">
                                 <div class="photo_and_title">
                                     <a href="#">
@@ -248,7 +394,7 @@
                             </figure>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 laptop_services">
                             <figure class="figure">
                                 <div class="photo_and_title">
                                     <a href="#">
@@ -265,7 +411,7 @@
                             </figure>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 laptop_services">
                             <figure class="figure">
                                 <div class="photo_and_title">
                                     <a href="#">
@@ -281,7 +427,7 @@
                             </figure>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 laptop_services">
                             <figure class="figure">
                                 <div class="photo_and_title">
                                     <a href="#">
@@ -298,50 +444,186 @@
                             </figure>
                         </div>                    
                 </div>
+
+                <div class="row phone_services">
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <figure class="figure">
+                            <div class="photo_and_title">
+                                <a href="#">
+                                    <img alt="Learning Development" src="images/assets/FBlearningdevelopment600x350.jpg" class="services">
+                                </a>
+                                
+                                <figcaption class="figure-caption text-left figtext">Learning Development</figcaption>
+                            </div>
+                            
+                            <figcaption class="figure-caption text-left">Supporting you to develop a range of academic skills such as critical thinking, academic writing,
+                                English Language and Maths & Stats.
+                            </figcaption>
+
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row  tablet_library_services">
+                    <div class="col-md-6">
+                        <figure class="figure">
+                            <div class="photo_and_title">
+                                <a href="#">
+                                    <img alt="Library Research Services" src="images/assets/FBresearchservices.jpg" class="services">
+                                </a>
+                                
+                                <figcaption class="figure-caption text-left figtext">Library Research Services</figcaption>
+                            </div>
+                            
+                            <figcaption class="figure-caption text-left"> The Library supports you throughout the whole research cycle, no matter what stage you are in
+                                your research career.
+                            </figcaption>
+
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6">
+                        <figure class="figure">
+                            <div class="photo_and_title">
+                                <a href="#">
+                                    <img alt="Learn Independently" src="images/assets/JKP-151014-5679.jpg" class="services">
+                                </a>
+                                
+                                <figcaption class="figure-caption text-left figtext">Learn Independently</figcaption>
+                            </div>
+                            
+                            <figcaption class="figure-caption text-left">Explore resources and online learning material to develop your writing, referencing and information skills.
+                            </figcaption>
+
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="row  tablet_library_services">
+                    <div class="col-md-6">
+                        <figure class="figure">
+                            <div class="photo_and_title">
+                                <a href="#">
+                                    <img alt="Resources for Teaching" src="images/assets/FTfeatureboxteaching.jpg" class="services">
+                                </a>
+                                
+                                <figcaption class="figure-caption text-left figtext">Resources for Teaching</figcaption>
+                            </div>
+                            
+                            <figcaption class="figure-caption text-left">A range of Library resources and services
+                                to support teaching.
+                            </figcaption>
+
+                        </figure>
+                    </div>
+                </div> 
+
             </div>
 
             <div class="second_green_options">
                 <div class="row">
-                        <div class="col-lg-2">
-
-                        </div>
-
-                        <div class="col-lg-2">
+                        <div class="col-lg-3 col-md-6 delete_for_phone">
                             <a href="#">
                                 <img alt="Opening hours" src="images/assets/icons/6.PNG" class="second_green_stuff">
                             </a>
                             
-                           <br> Opening hours
+                          <div class="second_green_text"> <br> Opening hours </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-3 col-md-6 delete_for_phone">
                             <a href="#">
                                 <img alt="Noisy neighbours" src="images/assets/icons/7.PNG" class="second_green_stuff">
                             </a>
                             
-                         <br>  Noisy neighbours
+                         <div class="second_green_text"> <br>  Noisy neighbours </div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-3 col-md-6 laptop">
                             <a href="#">
                                 <img alt="Book group study space" src="images/assets/icons/8.PNG" class="second_green_stuff">
                             </a>
                             
-                          <br> Book group study <br> space
+                         <div class="second_green_text"> <br> Book group study <br> space</div>
                         </div>
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-3 col-md-6 laptop">
                             <a href="#">
                                 <img alt="Bulding updates" src="images/assets/icons/9.PNG" class="second_green_stuff">
                             </a>
                             
-                          <br> Building updates
+                         <div class="second_green_text"> <br> Building updates</div>
                         </div>
 
-                        <div class="col-lg-2">
-
-                        </div>
                 </div>
+
+                <div class="tablet_second_green_stuff">
+                    <div class="row">
+                        <div class="col-md-6" id="tablet_green_stuff">
+                            <a href="#">
+                                <img alt="Book group study space" src="images/assets/icons/8.PNG" class="second_green_stuff">
+                            </a>
+                            <br> Book group study <br> space
+                        </div>
+    
+                        <div class="col-md-6">
+                            <a href="#">
+                                <img alt="Bulding updates" src="images/assets/icons/9.PNG" class="second_green_stuff">
+                            </a>
+                            <br> Building updates
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="phone_second_options">
+                    <div class="row phone_second_options_row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#">
+                                <img alt="Opening hours" src="images/assets/icons/6.PNG" class="second_green_stuff">
+                            </a>
+                            
+                          <div class="second_green_text"> <br> Opening hours </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_second_options_row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#">
+                                <img alt="Noisy neighbours" src="images/assets/icons/7.PNG" class="second_green_stuff">
+                            </a>
+                            
+                            <div class="second_green_text"> <br>  Noisy neighbours </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_second_options_row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#">
+                                <img alt="Book group study space" src="images/assets/icons/8.PNG" class="second_green_stuff">
+                            </a>
+                            
+                            <div class="second_green_text" id="book_group_study_space"> <br> Book group study  space</div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row phone_second_options_row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="#">
+                                <img alt="Bulding updates" src="images/assets/icons/9.PNG" class="second_green_stuff">
+                            </a>
+                            
+                            <div class="second_green_text"> <br> Building updates</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="library_extension_project">
@@ -349,12 +631,31 @@
                     <div class="col-lg-12" id="library_extension_div">
                         <img src="images/assets/LibraryExtension1600x400.jpg" alt="Library Extension Project" id="library_extension_image">
                         <div id="library_extension">
-                            Library Extension Project
-                            <div id="little_library_extension_div">
-                                An exciting new extension, due to open in January 2021
-                            </div>
-                            
-                            <button type="button" class="btn btn-danger" id="library_extension_button">Library Extension</button>
+                            <div id="little_library_header">Library Extension Project</div>
+                                <div id="little_library_extension_div">
+                                    An exciting new extension, due to open in January 2021
+                                </div>
+                                
+                                <div id="library_button_div">
+                                    <button type="button" class="btn btn-danger" id="library_extension_button">Library Extension</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="library_extension_project_phone">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="library_extension_phone">
+                            <div id="little_library_header">Library Extension Project</div>
+                                <div id="little_library_extension_div">
+                                    An exciting new extension, due to open in January 2021
+                                </div>
+                                
+                                <div id="library_button_div">
+                                    <button type="button" class="btn btn-danger" id="library_extension_button">Library Extension</button>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -372,11 +673,11 @@
 
             <div class="carousel">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 laptop_carousel">
                         <figure class="figure">
                             <div class="carousel_div">
                                 <a href="#">
-                                    <img alt="Faculty Librarians" src="images/assets/sculpture-20130481280-637147729898692213.jpg" class="services">
+                                    <img alt="Loeb_Classical_Library" src="images/assets/sculpture-20130481280-637147729898692213.jpg" class="services">
                                 </a>
                                 
                                 <figcaption class="figure-caption text-left carousel_figtext">The Loeb Classical Library database now available </figcaption>
@@ -384,32 +685,54 @@
                                 <figcaption class="figure-caption text-left carousel_text">
                                     The Loeb Classical Library online makes Greek and Latin literature accessible to the broadest range of readers
                                 </figcaption>
+
+                                <div id="down_loeb_text">
+                                    
+                                </div>
+
                             </div>
 
                         </figure>
+
+                        <div id="carousel_link">
+                            More <a href="#">News</a>
+                        </div>
+
+                        <div id="left_arrow">
+                            <img src="images/left_arrow.jpg">
+                        </div>
+
                     </div>
                     
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 laptop_carousel"> 
                         <figure class="figure">
-                            <div class="carousel_div">
+                            <div class="carousel_div" id="law_col">
                                 <a href="#">
-                                    <img alt="Faculty Librarians" src="images/assets/law-637147645701200038.jpg" class="services">
+                                    <img alt="Practical_law" src="images/assets/law-637147645701200038.jpg" class="services">
                                 </a>
                                 
                                 <figcaption class="figure-caption text-left carousel_figtext">Practical Law database now available</figcaption>
                                 <br>
-                                <figcaption class="figure-caption text-left carousel_text">A new database from the Library
+                                <figcaption class="figure-caption text-left carousel_text" id="database_library_text">A new database from the Library
                                 </figcaption>
+                                <div id="down_law_text">
+                                    
+                                </div>
                             </div>
 
                         </figure>
+
+                        <div id="dots">
+                            <img src="images/dots.jpg">
+                        </div>
+
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 laptop_carousel">
                         <figure class="figure">
                             <div class="carousel_div">
                                 <a href="#">
-                                    <img alt="Faculty Librarians" src="images/assets/newspaper-4335891280-637139948905852493.jpg" class="services">
+                                    <img alt="Telegraph_Historical_Archive" src="images/assets/newspaper-4335891280-637139948905852493.jpg" class="services">
                                 </a>
                                 
                                 <figcaption class="figure-caption text-left carousel_figtext">Telegraph Historical Archive 1855-2016</figcaption>
@@ -417,13 +740,62 @@
                                 <figcaption class="figure-caption text-left carousel_text">Newspaper arhive now available from the Library
                                 </figcaption>
 
+                                <div id="down_telegraph_text">
+                                    
+                                </div>
+
                             </div>
 
                         </figure>
+
+                        <div id="right_arrow">
+                            <img src="images/right_arrow.jpg">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 tablet_carousel">
+                        <figure class="figure">
+                            <div class="carousel_div" id="law_col">
+                                <a href="#">
+                                    <img alt="Practical_law" src="images/assets/law-637147645701200038.jpg" class="services">
+                                </a>
+                                
+                                <figcaption class="figure-caption text-left carousel_figtext">Practical Law database now available</figcaption>
+                                <br>
+                                <figcaption class="figure-caption text-left carousel_text" id="database_library_text">A new database from the Library
+                                </figcaption>
+
+                                <div id="down_law_text">
+                                    
+                                </div>
+
+                            </div>
+
+                        </figure>
+
+                        <div id="left_arrow">
+                            <img src="images/left_arrow.jpg">
+                        </div>
+
+                        <div id="dots">
+                            <img src="images/dots.jpg">
+                        </div>
+
+                        <div id="right_arrow">
+                            <img src="images/right_arrow.jpg">
+                        </div>
+
+                        <div id="carousel_link">
+                            More <a href="#">News</a>
+                        </div>
+
+
                     </div>
                     
 
                 </div>
+
             </div>
 
             <div class="footer" id="footer"> 
@@ -458,7 +830,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-2 footer_divs">
+                        <div class="col-lg-2 footer_divs" id="connect">
                             <div class="footer_titles">CONNECT</div>
                             <br>
 
@@ -480,8 +852,85 @@
                         </div>
 
                         <div class="col-lg-2 footer_divs">
-                            <img src="images/united_kingdom.jpg" width="175" height="250">
+                            <img src="images/united_kingdom.jpg" width="175" height="250" id="uk_img">
                         </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 footer_divs" id="connect_tablet">
+                        <div class="footer_titles">CONNECT</div>
+                        <br>
+
+                        <img src="images/social_media_tablet.jpg" id="social_media_tablet">
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone_footer">
+                <div class="row">
+                    <div class="col-xs-12 footer_divs">
+                        <div class="footer_titles">QUICK LINKS</div>
+                        <br>
+                        <ul id="quick_links_list">
+                            <li><a href="#">Undergraduate study</a></li>
+                            <li><a href="#">Postgraduate study</a></li>
+                            <li><a href="#">For students</a></li>
+                            <li><a href="#">For staff</a></li>
+                            <li><a href="#">A-Z Index</a></li>
+                            <li><a href="#">Job Vacancies</a></li>
+                            <li><a href="#">Colleges</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Online Payments</a></li>
+                            <li><a href="#">Students'Union</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 footer_divs" id="connect">
+                        <div class="footer_titles">CONNECT</div>
+                        <br>
+
+                        <img src="images/social_media_tablet.jpg"  id="social_media">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 footer_divs">
+                        <div class="footer_titles">CONTACT US</div>
+                        <br>
+                        <ul id="contact">
+                            <li>Lancaster University</li>
+                            <li>Lancaster</li>
+                            <li>United Kingdom</li>
+                            <li>LA1 4YW</li>
+                        </ul>
+                        <br><br><br><br>
+                       <div id="telephone_div"> <img src="images/telephone.jpg" id="telephone"> +44 (0)1524 65201 </div>
+                       <div id="location_div"> <img src="images/location.jpg" id="location"> Find us </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 footer_divs">
+                        <img src="images/united_kingdom.jpg" width="175" height="250" id="uk_img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright" id="copyright">
+                <div class="row">
+                    <div class="col-lg-12" id="copyright_links">
+                        <a href="#">Accessibility Statement</a>
+                        | 
+                        <a href="#">Legal Notice</a>
+                        | 
+                        <a href="#">Freedom of Information</a>
+                        | 
+                        <a href="#">Privacy and Cookies Notices</a>
+                        | 
+                        © 2020 Lancaster University. All rights reserved.
+                    </div>
                 </div>
             </div>
 
